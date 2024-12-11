@@ -16,7 +16,7 @@
           <q-menu>
             <div>
               <!-- <img src="profileExample.png" alt="profile page"/> -->
-              <q-img src="profileExample.png"/>              
+              <q-img src="profileExample.png" style="width: 150px; height: 200px;"/>              
             </div>
           </q-menu>
         </q-btn>        
