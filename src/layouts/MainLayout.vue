@@ -1,6 +1,8 @@
 <template>
   <q-layout view="hhh Lpr lFf">
-    <q-input v-if="route.path === '/'" class="q-px-md q-pt-sm fixed-top" standout rounded input-style="color: black" label-color="primary" bg-color="grey-2" v-model="searchBar" label="What's buzzin'?" style="z-index: 1;" >
+    <q-input v-if="route.path === '/'" class="q-px-md q-pt-sm fixed-top" standout rounded 
+      input-style="color: black" label-color="primary" bg-color="grey-2" 
+      v-model="searchBar" label="What's buzzin'?" style="z-index: 1;" >
       <template v-slot:prepend>
         <q-btn
           flat
@@ -14,8 +16,7 @@
       <template v-slot:append>
         <q-btn color="primary" text-color="black" icon="person" round >
           <q-menu>
-            <div>
-              <!-- <img src="profileExample.png" alt="profile page"/> -->
+            <div>              
               <q-img src="profileExample.png" style="width: 150px; height: 200px;"/>              
             </div>
           </q-menu>
@@ -29,10 +30,10 @@
       bordered
     >
       <q-list>
-        <q-item-label
-          header
-        >
-          Bee Yonsei
+        <q-item-label>
+          <q-img            
+            src="mainLogo.png"
+            style="width: 200px;" />
         </q-item-label>
 
         <EssentialLink
@@ -55,7 +56,7 @@ import { useRoute } from 'vue-router';
 import EssentialLink from 'components/EssentialLink.vue'
 import routes from 'src/router/routes'
 
-const linksList = routes[0].children.slice(1)
+const linksList = routes.slice(1, -1)
 
 const leftDrawerOpen = ref(false)
 const searchBar = ref()

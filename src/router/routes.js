@@ -3,10 +3,35 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') },
-      { path: 'resources', component: () => import('pages/ResourcesPage.vue'), title: 'Resources', icon: 'description' },
-      { path: 'community', component: () => import('pages/CommunityPage.vue'), title: 'Community', icon: 'groups' },
-      { path: 'about', component: () => import('pages/AboutPage.vue'), title: 'About', icon: 'help' }
+      { path: '', component: () => import('pages/IndexPage.vue') }
+    ]
+  },
+  {
+    path: '/resources',
+    title: 'Resources',
+    icon: 'description',
+    children: [      
+      { path: 'news', component: () => import('pages/NewsPage.vue'), title: 'News' },
+      { path: 'quiz', component: () => import('pages/DailyQuizzesPage.vue'), title: 'Daily Quizzes' }      
+    ]
+  },
+  {
+    path: '/community',
+    title: 'Community',
+    icon: 'groups',
+    children: [      
+      { path: 'upload', component: () => import('pages/UploadPhotoPage.vue'), title: 'Upload Photo' },
+      { path: 'community', component: () => import('pages/CommunityBoardPage.vue'), title: 'Community Board' }      
+    ]
+  },
+  {
+    path: '/about',
+    title: 'About',
+    icon: 'help',
+    children: [      
+      { path: 'partners', component: () => import('pages/OurPartnersPage.vue'), title: 'Our Partners' },
+      { path: 'overview', component: () => import('pages/ProjectOverviewPage.vue'), title: 'Project Overview' },
+      { path: 'why', component: () => import('pages/WhyPage.vue'), title: 'Why honeybees matter' }            
     ]
   },
 
