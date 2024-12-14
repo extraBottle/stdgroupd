@@ -1,0 +1,1 @@
+import{_ as e,O as s,V as c}from"./index-BOLPI4SL.js";const n={};function t(a,r){return s(),c("div",null,"this is news page")}const o=e(n,[["render",t],["__file","NewsPage.vue"]]);export{o as default};

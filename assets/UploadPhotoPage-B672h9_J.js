@@ -1,0 +1,1 @@
+import{_ as e,O as o,V as t}from"./index-BOLPI4SL.js";const a={};function c(n,r){return o(),t("div",null,"this is upload photo page")}const _=e(a,[["render",c],["__file","UploadPhotoPage.vue"]]);export{_ as default};
