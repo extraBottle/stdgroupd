@@ -7,6 +7,7 @@
     <q-card
       class="slide-drawer slide-drawer--bottom fixed-bottom column no-wrap"
       :class="`slide-drawer--open-${drawerMode}`"
+      style="z-index: 2;"
       :style="drawerStyle"
     >
       <q-card-section class="slide-drawer__handler--horizontal row flex-center q-pa-sm q-gutter-x-md" v-touch-pan.mouse.vertical="slideDrawer">        
