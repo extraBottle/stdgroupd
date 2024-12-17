@@ -1,1 +1,0 @@
-import{_ as e,O as o,V as t}from"./index-BOLPI4SL.js";const a={};function n(r,c){return o(),t("div",null,"this is community board page")}const _=e(a,[["render",n],["__file","CommunityBoardPage.vue"]]);export{_ as default};

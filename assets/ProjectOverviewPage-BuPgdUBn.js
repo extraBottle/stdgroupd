@@ -1,1 +1,0 @@
-import{_ as e,O as r,V as c}from"./index-BOLPI4SL.js";const t={};function o(a,n){return r(),c("div",null,"this is project overview page")}const _=e(t,[["render",o],["__file","ProjectOverviewPage.vue"]]);export{_ as default};

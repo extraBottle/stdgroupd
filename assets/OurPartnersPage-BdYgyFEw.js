@@ -1,1 +1,0 @@
-import{_ as e,O as r,V as t}from"./index-BOLPI4SL.js";const a={};function n(s,c){return r(),t("div",null,"this is our partner page")}const _=e(a,[["render",n],["__file","OurPartnersPage.vue"]]);export{_ as default};

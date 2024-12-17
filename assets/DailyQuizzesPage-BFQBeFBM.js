@@ -1,1 +1,0 @@
-import{_ as e,O as a,V as i}from"./index-BOLPI4SL.js";const s={};function c(t,n){return a(),i("div",null,"this is daily quiz page")}const _=e(s,[["render",c],["__file","DailyQuizzesPage.vue"]]);export{_ as default};
