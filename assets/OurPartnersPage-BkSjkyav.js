@@ -1,1 +1,0 @@
-import{_ as e,D as r,K as t}from"./index-B6K5-sjF.js";const a={};function n(s,c){return r(),t("div",null,"this is our partner page")}const _=e(a,[["render",n],["__file","OurPartnersPage.vue"]]);export{_ as default};
