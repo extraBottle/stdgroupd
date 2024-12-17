@@ -1,0 +1,1 @@
+import{_ as e,D as t,K as a}from"./index-CZZR6cE7.js";const c={};function n(r,s){return t(),a("div",null,"this is why honeybees matter page")}const _=e(c,[["render",n],["__file","WhyPage.vue"]]);export{_ as default};

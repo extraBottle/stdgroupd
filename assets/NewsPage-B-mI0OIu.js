@@ -1,1 +1,0 @@
-import{_ as e,D as s,K as c}from"./index-3rMCT38E.js";const n={};function t(a,r){return s(),c("div",null,"this is news page")}const o=e(n,[["render",t],["__file","NewsPage.vue"]]);export{o as default};

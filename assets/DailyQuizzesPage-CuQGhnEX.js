@@ -1,1 +1,0 @@
-import{_ as e,D as a,K as i}from"./index-3rMCT38E.js";const s={};function c(t,n){return a(),i("div",null,"this is daily quiz page")}const _=e(s,[["render",c],["__file","DailyQuizzesPage.vue"]]);export{_ as default};
