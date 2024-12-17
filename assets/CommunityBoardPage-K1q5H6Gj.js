@@ -1,0 +1,1 @@
+import{_ as e,D as o,K as t}from"./index-B6K5-sjF.js";const a={};function n(r,c){return o(),t("div",null,"this is community board page")}const _=e(a,[["render",n],["__file","CommunityBoardPage.vue"]]);export{_ as default};
