@@ -50,7 +50,7 @@
         <q-separator />
         <div class="text-h6 text-weight-bolder text-primary q-mt-lg q-mb-md">Discover</div> 
         <div class="relative-position q-mb-md">
-            <q-card class="q-mb-md" style="border-radius: 20px;">
+            <q-card class="q-mb-md" style="border-radius: 20px;" @click="router.push({ path: '/resources/quiz' })">
                 <img src="news7.png" />
                 <q-card-section class="q-py-sm">
                 <div class="text-subtitle1 text-bold q-pb-md" style="text-align: start;">Basic Knowledge Quiz</div>            
@@ -61,7 +61,7 @@
             </q-chip>
         </div>   
         <div class="relative-position q-mb-md">
-            <q-card class="q-mb-md" style="border-radius: 20px;">
+            <q-card class="q-mb-md" style="border-radius: 20px;" @click="router.push({ path: '/resources/quiz' })">
                 <img src="news8.png" />
                 <q-card-section class="q-py-sm">
                 <div class="text-subtitle1 text-bold q-pb-md" style="text-align: start;">Fun Bee Facts</div>            
@@ -75,10 +75,11 @@
 </template>
 
 <script setup>
-// import { ref, computed, onBeforeUnmount } from 'vue'
-// import { useQuasar } from 'quasar'
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide } from 'vue3-carousel'
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 const config = {
   itemsToShow: 1.3,
