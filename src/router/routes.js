@@ -34,6 +34,13 @@ const routes = [
       { path: 'why', component: () => import('pages/WhyPage.vue'), title: 'Why honeybees matter' }            
     ]
   },
+  {
+    path: '/camera',
+    component: () => import('layouts/UploadLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/CameraPage.vue') }
+    ]
+  },
 
   // Always leave this as last one,
   // but you can also remove it
