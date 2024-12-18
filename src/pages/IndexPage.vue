@@ -11,6 +11,7 @@
       style="z-index: 2;"
       :style="drawerStyle"
     >
+      <div class="scroll">
       <q-card-section class="slide-drawer__handler--horizontal row flex-center q-pa-sm q-gutter-x-md" v-touch-pan.mouse.vertical="slideDrawer">        
         <div class="cursor-pointer" @click="cycleDrawer"></div>        
       </q-card-section>
@@ -46,10 +47,11 @@
             </q-card>
           </Slide>
         </Carousel>
-        <div class="text-primary text-subtitle1 text-bold absolute-bottom q-pb-md" style="text-align: center;">Look for more</div>        
+        <div class="text-primary text-subtitle1 text-bold q-pb-md" style="text-align: center;">Look for more</div>        
       </q-card-section>
       <div class="bg-grey-2" style="height: 4px;"></div>
-      <q-scroll-area style="height: 363px; max-width: 393px;" visible="false">
+      
+      <!-- <q-scroll-area style="height: 363px; max-width: 393px;" visible="false"> -->
         <q-card-section v-if="drawerMode !== 'handler'" class="col">
           <q-list>
             <q-item>
@@ -107,7 +109,8 @@
             </q-item>
           </q-list>        
         </q-card-section>
-      </q-scroll-area>
+      </div>
+      <!-- </q-scroll-area> -->
     </q-card>    
   </q-page>
 </template>
