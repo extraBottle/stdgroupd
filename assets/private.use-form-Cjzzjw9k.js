@@ -1,0 +1,1 @@
+import{m as u,h as o}from"./index-hKTwE-_U.js";const m={name:String};function s(n={}){return(t,e,r)=>{t[e](o("input",{class:"hidden"+(r||""),...n.value}))}}function c(n){return u(()=>n.name||n.for)}export{c as a,s as b,m as u};

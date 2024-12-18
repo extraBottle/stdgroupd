@@ -1,0 +1,1 @@
+import{_ as e,J as r,P as t}from"./index-hKTwE-_U.js";const a={};function n(s,c){return r(),t("div",null,"this is our partner page")}const _=e(a,[["render",n],["__file","OurPartnersPage.vue"]]);export{_ as default};
