@@ -1,0 +1,1 @@
+import{_ as e,N as r,U as c}from"./index-BTfTFqYG.js";const t={};function o(a,n){return r(),c("div",null,"this is project overview page")}const _=e(t,[["render",o],["__file","ProjectOverviewPage.vue"]]);export{_ as default};
