@@ -41,6 +41,10 @@ const routes = [
       { path: '', component: () => import('pages/CameraPage.vue') }
     ]
   },
+  {
+    path: '/location',
+    component: () => import('pages/LocationPage.vue')
+  },
 
   // Always leave this as last one,
   // but you can also remove it

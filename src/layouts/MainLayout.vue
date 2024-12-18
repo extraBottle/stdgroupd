@@ -1,6 +1,6 @@
 <template>
   <q-layout view="hhh Lpr lFf">
-    <div v-if="route.path === '/'" class="fixed-top" style="z-index: 1;">
+    <div v-if="route.path === '/'" class="fixed-top relative-position" style="z-index: 1;">
       <q-input class="q-px-md q-pt-sm" standout rounded 
         input-style="color: black" label-color="primary" bg-color="grey-2" 
         v-model="searchBar" label="What's buzzin'?" >
@@ -80,7 +80,7 @@
                 <div class="text-h6 text-weight-bold q-pl-md q-mb-md" >My Honey Comb</div>
                 <q-card class="q-mr-lg relative-position" style="border-radius: 15px;">
                   <q-img src="profile4.png" fit="scale-down" />
-                  <q-card-section class="bg-primary text-white text-weight-bold text-subtitle1">
+                  <q-card-section class="bg-primary text-white text-weight-bold text-subtitle1" style="border-radius: 0 0 15px 15px;">
                     Complete Daily Mission
                   </q-card-section>
                   <q-chip class="absolute-bottom-left q-mb-xl" color="secondary" text-color="primary" >
@@ -112,6 +112,11 @@
         </div>
       </q-scroll-area>
       <div class="row justify-end q-pr-md"><q-btn class="q-mt-md" size="18px" color="primary" icon="photo_camera" round to="/community/upload" /></div>      
+      <img v-if="selectCategory == 'All' || selectCategory == 'Shops'" src="map1.png" class="absolute" style="bottom: -150%; right: 10%;" @click="router.push('location')" />
+      <img v-if="selectCategory == 'All' || selectCategory == 'Garden'" src="map2.png" class="absolute" style="bottom: -70%; right: 20%;" @click="router.push('location')"/>
+      <img v-if="selectCategory == 'All' || selectCategory == 'Plants'" src="map3.png" class="absolute" style="bottom: -130%; right: 70%;" @click="router.push('location')"/>
+      <img v-if="selectCategory == 'All' || selectCategory == 'Shops'" src="map1.png" class="absolute" style="bottom: -240%; right: 80%;" @click="router.push('location')"/>
+      <img v-if="selectCategory == 'All' || selectCategory == 'Garden'" src="map2.png" class="absolute" style="bottom: -160%; right: 50%;" @click="router.push('location')"/>
     </div>
 
     <q-drawer      
@@ -142,13 +147,14 @@
 
 <script setup>
 import { ref } from 'vue'
-import { useRoute } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide } from 'vue3-carousel'
 import EssentialLink from 'components/EssentialLink.vue'
 import routes from 'src/router/routes'
 
 const linksList = routes.slice(1, 4)
+const router = useRouter()
 
 const leftDrawerOpen = ref(false)
 const searchBar = ref()

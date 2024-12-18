@@ -1,9 +1,10 @@
 <template>
   <q-page>
+    <!-- <div id="map" style="width: 100%; height: 400px;"></div> -->
     <q-img
       src="mapImage.png" 
-      style="height: 100vh;"                 
-    />
+      style="height: 100vh;">
+    </q-img>
     <q-card
       class="slide-drawer slide-drawer--bottom fixed-bottom column no-wrap"
       :class="`slide-drawer--open-${drawerMode}`"
@@ -104,7 +105,7 @@
                 <img src="cara5.png" />
               </q-item-section>
             </q-item>
-          </q-list>
+          </q-list>        
         </q-card-section>
       </q-scroll-area>
     </q-card>    
@@ -190,6 +191,7 @@ function animateDrawerTo(height) {
 onBeforeUnmount(() => {
   clearTimeout(animateTimeout)
 })
+
 </script>
 
 <style lang="sass">
