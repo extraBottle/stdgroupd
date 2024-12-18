@@ -11,11 +11,11 @@
       style="z-index: 2;"
       :style="drawerStyle"
     >
-      <div class="scroll">
+      
       <q-card-section class="slide-drawer__handler--horizontal row flex-center q-pa-sm q-gutter-x-md" v-touch-pan.mouse.vertical="slideDrawer">        
         <div class="cursor-pointer" @click="cycleDrawer"></div>        
       </q-card-section>
-
+      <div class="scroll">
       <q-card-section class="col relative-position">
         <div class="text-h6 text-bold q-pt-md q-pb-xs">Latest in the Area</div>        
         <Carousel v-bind="config">
